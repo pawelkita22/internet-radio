@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code check out
+        uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          chech-latest: true
+          cache: npm
+      - name: Install dependencies  
+        run: npm install
+      - name: Build source
+        run: npm run build
