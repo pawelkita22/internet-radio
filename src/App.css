@@ -44,14 +44,17 @@
 }
 
 body {
-  background: grey;
   background: linear-gradient(to top right, grey, brown);
   color: whitesmoke;
 }
 
 h1 {
-  margin: 1em 0 0 0;
+  margin: 1em;
   font-size: 3rem;
+  padding: 0.25em 0.75em;
+  background: linear-gradient(to bottom left, grey, brown);
+  border: 2px solid tomato;
+  border-radius: 10px;
 }
 
 h2 {
@@ -61,6 +64,16 @@ h2 {
 .radio {
   max-width: 60em;
   width: 100%;
+}
+
+.input-field{
+  border: 2px solid tomato;
+  border-radius: 10px;
+  padding: 0.25em 0.75em;
+  margin: 0.25em;
+  background: linear-gradient(to bottom left, grey, brown);
+  color: whitesmoke;
+  font-size: 1.2rem;
 }
 
 .categories {
@@ -77,6 +90,7 @@ h2 {
   border: 2px solid tomato;
   border-radius: 10px;
   padding: 0.25em 0.75em;
+  background: linear-gradient(to bottom left, grey, brown);
 }
 
 .categories > span:hover {
@@ -105,6 +119,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(to bottom left, grey, brown);
 }
 
 .station:hover{

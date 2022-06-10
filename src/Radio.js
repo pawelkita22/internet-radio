@@ -34,6 +34,7 @@ export default function Radio() {
 
   return (
     <div className='radio'>
+      <input type="text" className="input-field" placeholder='category' onKeyDown={(e) => setStationCategory(e.target.value)}></input>
       <div className='categories'>
         {categories.map(category => {
           return (
