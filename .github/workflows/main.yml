@@ -21,7 +21,7 @@ jobs:
     - name: Build source
       run: npm run build
     - name: Upload to bucket
-      uses: pawelkita22/internet-radio@master
+      uses: pawelkita22/s3-sync-action@master
       with:
         args: --follow-symlinks --delete
       env:
